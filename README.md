@@ -1,4 +1,6 @@
 Project Overview :
+
+
 This single-page web app fetches and parses earthquake data from the USGS Earthquake feed. It provides users with:
 - A scatter plot to visually represent magnitude and depth.
 - An interactive data table showing detailed earthquake information.
@@ -7,7 +9,6 @@ This single-page web app fetches and parses earthquake data from the USGS Earthq
 
 Technologies Used :
 - React (JavaScript) — UI framework
-- CSS — Custom styling (no Tailwind CSS yet)
 - Recharts — Charting library for scatter plot
 - PapaParse — CSV parser
 - React Context API — Shared state management
@@ -22,16 +23,18 @@ npm install
 3. Start the development server:
 npm run dev
 
-Project Structure as follows : 
 
-src/
-├── components/
-│   ├── scatter-data.jsx        # Scatter chart component
-│   └── Datatable.jsx           # Data table component
-├── App.jsx                     # Main application 
-└── main.jsx                   
-public/
-└── all_month.csv               # Earthquake data file
+
+| Package                        | Purpose                                                              |
+| ------------------------------ | -------------------------------------------------------------------- |
+| `axios`                        | For data fetching functionality.                 |
+| `date-fns`                     | Utility functions for manipulating and formatting dates              |
+| `papaparse`                    | Efficient CSV parsing in JavaScript                                  |
+| `react`                        | Core React library for building user interfaces                      |
+| `react-dom`                    | React-specific DOM rendering support                                 |
+| `react-virtualized-auto-sizer` | Automatically resizes components like tables to fit their containers |
+| `react-window`                 | Virtualized list rendering for performance in large datasets         |
+| `recharts`                     | Charting library used for rendering scatter plots and visualizations |
 
 
 Features : 
@@ -48,5 +51,5 @@ State Management
 AI Tools Used
 ChatGPT was used to:
 - Plan component structure and state handling.
-- Refactor and document CSS and logic cleanly.
+- Refactor and document CSS.
 
