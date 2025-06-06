@@ -17,13 +17,14 @@ Technologies Used :
 Installation process:
 1. Clone the repository:
 git clone https://github.com/sarahm-30/Sarah---earthquake-dashboard.git
+
 cd earthquake-dashboard
 2. Install dependencies:
 npm install
 3. Start the development server:
 npm run dev
 
-
+External Dependencies : 
 
 | Package                        | Purpose                                                              |
 | ------------------------------ | -------------------------------------------------------------------- |
@@ -44,11 +45,11 @@ Features :
 - CSV parsing via PapaParse.
 - Modular code with proper React best practices.
 
-State Management
+State Management : 
 - React Context is used to handle the selected earthquake and filtered data across components.
 - Context is provided at the root level via EarthquakeProvider.
 
-AI Tools Used
+AI Tools Used : 
 ChatGPT was used to:
 - Plan component structure and state handling.
 - Refactor and document CSS.
